@@ -6,11 +6,9 @@
 ## The first function, makeCacheMatrix,
 ## will create a matrix object that can
 ## be used to cache the inverse of a matrix
-## once it is calculated
 
 makeCacheMatrix <- function(x = matrix()) {
   cache <- NULL
-  y <- NULL
   set <- function(y) {
     x <<- y
     cache <<- NULL
